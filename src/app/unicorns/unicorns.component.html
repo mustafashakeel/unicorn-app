@@ -1,0 +1,13 @@
+<div class="body-content">
+  <div class="unicorn-list">
+    <h2>List if Unicorns</h2>
+    <ul>
+    <li *ngFor="let unicorn of unicorns" (click)=selectedUnicorn(unicorn) >  {{unicorn.name}}</li>
+    </ul>
+  </div>
+  <div class="unicorn-details">
+    <app-unicorn-detail [unicorn]="sUnicorn" ></app-unicorn-detail>
+  </div>
+</div>
+
+
