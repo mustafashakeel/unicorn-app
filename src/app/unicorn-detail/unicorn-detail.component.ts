@@ -14,7 +14,6 @@ const VALUE_ACCESSOR = {
   styleUrls: ['./unicorn-detail.component.css']
 })
 export class UnicornDetailComponent implements OnInit, ControlValueAccessor {
-
   @Input()unicorn:Unicorn;
   @Input() label: string = "Enter value here";
   @Input() required: boolean = true;
@@ -43,27 +42,21 @@ console.log(" _valuee ", this._value);
       this.onChange(v);
     }
   }
-
   writeValue(value: any) {
     this._value = value;
   }
-
   public registerOnChange(fn: (_: any) => {}): void {
     this.onChange = fn;
   }
-
   public registerOnTouched(fn: () => {}): void {
     this.onTouched = fn;
   }
-
   onBlur($event: Event) {
     this.editing = false;
     if ( this._value ==""){
       this._value = "No value available";
     }
   }
-
-
   beginEdit(value) {
     this.preValue = value;
     this.editing = true;

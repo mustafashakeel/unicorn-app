@@ -1,11 +1,7 @@
-<div *ngIf="unicorn">
-
+<div  class="unicorn-details" *ngIf="unicorn">
     <h2>Unicorn Name: {{unicorn.name}} </h2>
-
     is currently located or rather Galavanting at
-
     <div>
-
       <div *ngIf="editing">
         <input [required]="required" (blur)="onBlur($event)" [name]="value" [(ngModel)]="value" [placeholder]="label" />
       </div>

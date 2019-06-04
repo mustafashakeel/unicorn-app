@@ -9,17 +9,10 @@ import {UNICORNS} from '../list-unicorns';
 export class UnicornsComponent implements OnInit {
   sUnicorn;
   unicorns = UNICORNS;
-
   constructor() { }
-
   selectedUnicorn(unicorn):void{
-
       this.sUnicorn = unicorn;
-      console.log(" selected Unicorn ", unicorn.name);
-
-
   }
-
   ngOnInit() {
   }
 

@@ -12,5 +12,19 @@ width:20%;
 .unicorn-details{
   float:right;
   width:80%;
+}
+ul{
+  padding:0px;
+	margin:0px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	color:#FFF;
+	list-style:none;
+	text-indent:15px;
+}
 
+ul li {
+	background:#3f3f3f;
+	line-height:28px;
+        border-bottom:1px solid #333;
 }
